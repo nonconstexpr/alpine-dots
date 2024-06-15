@@ -1,0 +1,26 @@
+shell = "zsh -c '{}'"
+default-scheme = "base16-gruvbox-dark-hard"
+
+[[items]]
+name = "sway"
+path = "https://github.com/rkubosz/base16-sway"
+themes-dir = "themes"
+hook = "cp -f %f ~/.config/sway/colors && swaymsg reload"
+
+[[items]]
+name = "foot"
+path = "https://github.com/tinted-theming/base16-foot"
+themes-dir = "colors"
+hook = "cp -f %f ~/.config/foot/colors.ini"
+
+[[items]]
+name = "wofi"
+path = "https://git.sr.ht/~knezi/base16-wofi"
+themes-dir = "themes"
+hook = "cp -f %f ~/.config/wofi/style.css"
+
+[[items]]
+name = "luakit"
+path = "https://github.com/twnaing/base16-luakit"
+themes-dir = "themes"
+hook = "cp -f %f ~/.config/luakit/theme.lua"
